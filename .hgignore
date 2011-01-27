@@ -1,0 +1,14 @@
+# Mac Clutter
+syntax: glob
+.DS_Store
+Icon?
+._*
+
+# Build Clutter
+build/*
+external/*
+prebuilt/*
+*.pbxuser
+*.perspectivev3
+*.mode1*
+
