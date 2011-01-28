@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43002B6F12F2780A00C31A83 /* dir.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B5812F2780A00C31A83 /* dir.c */; };
+		43002B7012F2780A00C31A83 /* grp.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B5912F2780A00C31A83 /* grp.c */; };
+		43002B7112F2780A00C31A83 /* hog.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B5A12F2780A00C31A83 /* hog.c */; };
+		43002B7312F2780A00C31A83 /* mvl.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B5C12F2780A00C31A83 /* mvl.c */; };
+		43002B7412F2780A00C31A83 /* qpak.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B5D12F2780A00C31A83 /* qpak.c */; };
+		43002B7512F2780A00C31A83 /* wad.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B5E12F2780A00C31A83 /* wad.c */; };
+		43002B7612F2780A00C31A83 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B5F12F2780A00C31A83 /* zip.c */; };
+		43002B7712F2780A00C31A83 /* physfs_byteorder.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B6012F2780A00C31A83 /* physfs_byteorder.c */; };
+		43002B7812F2780A00C31A83 /* physfs_casefolding.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002B6112F2780A00C31A83 /* physfs_casefolding.h */; };
+		43002B7912F2780A00C31A83 /* physfs_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002B6212F2780A00C31A83 /* physfs_internal.h */; };
+		43002B7A12F2780A00C31A83 /* physfs_platforms.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002B6312F2780A00C31A83 /* physfs_platforms.h */; };
+		43002B7B12F2780A00C31A83 /* physfs_unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B6412F2780A00C31A83 /* physfs_unicode.c */; };
+		43002B7C12F2780A00C31A83 /* physfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B6512F2780A00C31A83 /* physfs.c */; };
+		43002B7D12F2780A00C31A83 /* physfs.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002B6612F2780A00C31A83 /* physfs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43002B7F12F2780A00C31A83 /* macosx.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B6912F2780A00C31A83 /* macosx.c */; };
+		43002B8212F2780A00C31A83 /* posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B6C12F2780A00C31A83 /* posix.c */; };
+		43002B8512F2789900C31A83 /* lzma.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B5B12F2780A00C31A83 /* lzma.c */; };
+		43002B8912F2798900C31A83 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43002B8812F2798900C31A83 /* Carbon.framework */; };
+		43002B8B12F2798900C31A83 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43002B8A12F2798900C31A83 /* IOKit.framework */; };
+		43002D0A12F279D200C31A83 /* Zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43002D0512F279AC00C31A83 /* Zlib.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43002D0412F279AC00C31A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43002CFD12F279AC00C31A83 /* Zlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4300283612F24CFC00C31A83 /* Zlib.framework */;
+			remoteInfo = "Mac Framework";
+		};
+		43002D0612F279B900C31A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43002CFD12F279AC00C31A83 /* Zlib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4300283512F24CFC00C31A83 /* Mac Framework */;
+			remoteInfo = "Mac Framework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4300283612F24CFC00C31A83 /* PhysFS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhysFS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4300283F12F24D6C00C31A83 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = configs/Base.xcconfig; sourceTree = "<group>"; };
+		4300286A12F2561D00C31A83 /* Base-All.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Base-All.xcconfig"; path = "configs/Base-All.xcconfig"; sourceTree = "<group>"; };
+		43002B5212F2776E00C31A83 /* PhysFS-All.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "PhysFS-All.xcconfig"; path = "configs/PhysFS-All.xcconfig"; sourceTree = "<group>"; };
+		43002B5312F2776E00C31A83 /* PhysFS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "PhysFS-Debug.xcconfig"; path = "configs/PhysFS-Debug.xcconfig"; sourceTree = "<group>"; };
+		43002B5412F2776E00C31A83 /* PhysFS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "PhysFS-Release.xcconfig"; path = "configs/PhysFS-Release.xcconfig"; sourceTree = "<group>"; };
+		43002B5812F2780A00C31A83 /* dir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dir.c; sourceTree = "<group>"; };
+		43002B5912F2780A00C31A83 /* grp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = grp.c; sourceTree = "<group>"; };
+		43002B5A12F2780A00C31A83 /* hog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hog.c; sourceTree = "<group>"; };
+		43002B5B12F2780A00C31A83 /* lzma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lzma.c; sourceTree = "<group>"; };
+		43002B5C12F2780A00C31A83 /* mvl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mvl.c; sourceTree = "<group>"; };
+		43002B5D12F2780A00C31A83 /* qpak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qpak.c; sourceTree = "<group>"; };
+		43002B5E12F2780A00C31A83 /* wad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wad.c; sourceTree = "<group>"; };
+		43002B5F12F2780A00C31A83 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		43002B6012F2780A00C31A83 /* physfs_byteorder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = physfs_byteorder.c; path = external/physfs/physfs_byteorder.c; sourceTree = "<group>"; };
+		43002B6112F2780A00C31A83 /* physfs_casefolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = physfs_casefolding.h; path = external/physfs/physfs_casefolding.h; sourceTree = "<group>"; };
+		43002B6212F2780A00C31A83 /* physfs_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = physfs_internal.h; path = external/physfs/physfs_internal.h; sourceTree = "<group>"; };
+		43002B6312F2780A00C31A83 /* physfs_platforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = physfs_platforms.h; path = external/physfs/physfs_platforms.h; sourceTree = "<group>"; };
+		43002B6412F2780A00C31A83 /* physfs_unicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = physfs_unicode.c; path = external/physfs/physfs_unicode.c; sourceTree = "<group>"; };
+		43002B6512F2780A00C31A83 /* physfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = physfs.c; path = external/physfs/physfs.c; sourceTree = "<group>"; };
+		43002B6612F2780A00C31A83 /* physfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = physfs.h; path = external/physfs/physfs.h; sourceTree = "<group>"; };
+		43002B6812F2780A00C31A83 /* beos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = beos.cpp; sourceTree = "<group>"; };
+		43002B6912F2780A00C31A83 /* macosx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = macosx.c; sourceTree = "<group>"; };
+		43002B6A12F2780A00C31A83 /* os2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = os2.c; sourceTree = "<group>"; };
+		43002B6B12F2780A00C31A83 /* pocketpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pocketpc.c; sourceTree = "<group>"; };
+		43002B6C12F2780A00C31A83 /* posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = posix.c; sourceTree = "<group>"; };
+		43002B6D12F2780A00C31A83 /* unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unix.c; sourceTree = "<group>"; };
+		43002B6E12F2780A00C31A83 /* windows.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = windows.c; sourceTree = "<group>"; };
+		43002B8812F2798900C31A83 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		43002B8A12F2798900C31A83 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		43002CFD12F279AC00C31A83 /* Zlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Zlib.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4300283412F24CFC00C31A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43002B8912F2798900C31A83 /* Carbon.framework in Frameworks */,
+				43002B8B12F2798900C31A83 /* IOKit.framework in Frameworks */,
+				43002D0A12F279D200C31A83 /* Zlib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4300281A12F24C1E00C31A83 = {
+			isa = PBXGroup;
+			children = (
+				4300283012F24CCC00C31A83 /* Configs */,
+				4300284A12F24E9C00C31A83 /* Code */,
+				4300284C12F24F0900C31A83 /* Third Party */,
+				4300284B12F24ECF00C31A83 /* System Frameworks */,
+				4300283712F24CFC00C31A83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4300283012F24CCC00C31A83 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				43002B5212F2776E00C31A83 /* PhysFS-All.xcconfig */,
+				43002B5312F2776E00C31A83 /* PhysFS-Debug.xcconfig */,
+				43002B5412F2776E00C31A83 /* PhysFS-Release.xcconfig */,
+				4300286A12F2561D00C31A83 /* Base-All.xcconfig */,
+				4300283F12F24D6C00C31A83 /* Base.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		4300283712F24CFC00C31A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4300283612F24CFC00C31A83 /* PhysFS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4300284A12F24E9C00C31A83 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				43002B5712F2780A00C31A83 /* archivers */,
+				43002B6712F2780A00C31A83 /* platform */,
+				43002B6012F2780A00C31A83 /* physfs_byteorder.c */,
+				43002B6112F2780A00C31A83 /* physfs_casefolding.h */,
+				43002B6212F2780A00C31A83 /* physfs_internal.h */,
+				43002B6312F2780A00C31A83 /* physfs_platforms.h */,
+				43002B6412F2780A00C31A83 /* physfs_unicode.c */,
+				43002B6512F2780A00C31A83 /* physfs.c */,
+				43002B6612F2780A00C31A83 /* physfs.h */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		4300284B12F24ECF00C31A83 /* System Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43002B8812F2798900C31A83 /* Carbon.framework */,
+				43002B8A12F2798900C31A83 /* IOKit.framework */,
+			);
+			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		4300284C12F24F0900C31A83 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				43002CFD12F279AC00C31A83 /* Zlib.xcodeproj */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		43002B5712F2780A00C31A83 /* archivers */ = {
+			isa = PBXGroup;
+			children = (
+				43002B5812F2780A00C31A83 /* dir.c */,
+				43002B5912F2780A00C31A83 /* grp.c */,
+				43002B5A12F2780A00C31A83 /* hog.c */,
+				43002B5B12F2780A00C31A83 /* lzma.c */,
+				43002B5C12F2780A00C31A83 /* mvl.c */,
+				43002B5D12F2780A00C31A83 /* qpak.c */,
+				43002B5E12F2780A00C31A83 /* wad.c */,
+				43002B5F12F2780A00C31A83 /* zip.c */,
+			);
+			name = archivers;
+			path = external/physfs/archivers;
+			sourceTree = "<group>";
+		};
+		43002B6712F2780A00C31A83 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				43002B6812F2780A00C31A83 /* beos.cpp */,
+				43002B6912F2780A00C31A83 /* macosx.c */,
+				43002B6A12F2780A00C31A83 /* os2.c */,
+				43002B6B12F2780A00C31A83 /* pocketpc.c */,
+				43002B6C12F2780A00C31A83 /* posix.c */,
+				43002B6D12F2780A00C31A83 /* unix.c */,
+				43002B6E12F2780A00C31A83 /* windows.c */,
+			);
+			name = platform;
+			path = external/physfs/platform;
+			sourceTree = "<group>";
+		};
+		43002CFE12F279AC00C31A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43002D0512F279AC00C31A83 /* Zlib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4300283112F24CFC00C31A83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43002B7812F2780A00C31A83 /* physfs_casefolding.h in Headers */,
+				43002B7912F2780A00C31A83 /* physfs_internal.h in Headers */,
+				43002B7A12F2780A00C31A83 /* physfs_platforms.h in Headers */,
+				43002B7D12F2780A00C31A83 /* physfs.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4300283512F24CFC00C31A83 /* Mac Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4300283B12F24CFD00C31A83 /* Build configuration list for PBXNativeTarget "Mac Framework" */;
+			buildPhases = (
+				4300284E12F24F2D00C31A83 /* Fetch Source */,
+				4300283112F24CFC00C31A83 /* Headers */,
+				4300283212F24CFC00C31A83 /* Resources */,
+				4300283312F24CFC00C31A83 /* Sources */,
+				4300283412F24CFC00C31A83 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43002D0712F279B900C31A83 /* PBXTargetDependency */,
+			);
+			name = "Mac Framework";
+			productName = Untitled;
+			productReference = 4300283612F24CFC00C31A83 /* PhysFS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4300281C12F24C1E00C31A83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				ORGANIZATIONNAME = mp.dak10.;
+			};
+			buildConfigurationList = 4300281F12F24C1E00C31A83 /* Build configuration list for PBXProject "PhysFS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 4300281A12F24C1E00C31A83;
+			productRefGroup = 4300283712F24CFC00C31A83 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 43002CFE12F279AC00C31A83 /* Products */;
+					ProjectRef = 43002CFD12F279AC00C31A83 /* Zlib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4300283512F24CFC00C31A83 /* Mac Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		43002D0512F279AC00C31A83 /* Zlib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Zlib.framework;
+			remoteRef = 43002D0412F279AC00C31A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4300283212F24CFC00C31A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4300284E12F24F2D00C31A83 /* Fetch Source */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fetch Source";
+			outputPaths = (
+				"$(SRCROOT)/external/$(PRODUCT_INFO_SHORTNAME)/",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4300283312F24CFC00C31A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43002B6F12F2780A00C31A83 /* dir.c in Sources */,
+				43002B7012F2780A00C31A83 /* grp.c in Sources */,
+				43002B7112F2780A00C31A83 /* hog.c in Sources */,
+				43002B7312F2780A00C31A83 /* mvl.c in Sources */,
+				43002B7412F2780A00C31A83 /* qpak.c in Sources */,
+				43002B7512F2780A00C31A83 /* wad.c in Sources */,
+				43002B7612F2780A00C31A83 /* zip.c in Sources */,
+				43002B7712F2780A00C31A83 /* physfs_byteorder.c in Sources */,
+				43002B7B12F2780A00C31A83 /* physfs_unicode.c in Sources */,
+				43002B7C12F2780A00C31A83 /* physfs.c in Sources */,
+				43002B7F12F2780A00C31A83 /* macosx.c in Sources */,
+				43002B8212F2780A00C31A83 /* posix.c in Sources */,
+				43002B8512F2789900C31A83 /* lzma.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43002D0712F279B900C31A83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mac Framework";
+			targetProxy = 43002D0612F279B900C31A83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4300281D12F24C1E00C31A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4300283F12F24D6C00C31A83 /* Base.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4300281E12F24C1E00C31A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4300283F12F24D6C00C31A83 /* Base.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4300283912F24CFD00C31A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43002B5412F2776E00C31A83 /* PhysFS-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4300283A12F24CFD00C31A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43002B5312F2776E00C31A83 /* PhysFS-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4300281F12F24C1E00C31A83 /* Build configuration list for PBXProject "PhysFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4300281E12F24C1E00C31A83 /* Release */,
+				4300281D12F24C1E00C31A83 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4300283B12F24CFD00C31A83 /* Build configuration list for PBXNativeTarget "Mac Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4300283912F24CFD00C31A83 /* Release */,
+				4300283A12F24CFD00C31A83 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4300281C12F24C1E00C31A83 /* Project object */;
+}
