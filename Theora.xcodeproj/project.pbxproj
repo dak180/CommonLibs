@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43002E5512F282EC00C31A83 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43002E4D12F282DA00C31A83 /* Ogg.framework */; };
+		43002E5612F282ED00C31A83 /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43002E5412F282DA00C31A83 /* Vorbis.framework */; };
+		43002E9212F2842300C31A83 /* codec.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E6312F2842300C31A83 /* codec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43002E9312F2842300C31A83 /* theora.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E6412F2842300C31A83 /* theora.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43002E9412F2842300C31A83 /* theoradec.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E6512F2842300C31A83 /* theoradec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43002E9512F2842300C31A83 /* theoraenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E6612F2842300C31A83 /* theoraenc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43002E9612F2842300C31A83 /* analyze.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E6712F2842300C31A83 /* analyze.c */; };
+		43002E9712F2842300C31A83 /* apiwrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E6812F2842300C31A83 /* apiwrapper.c */; };
+		43002E9812F2842300C31A83 /* apiwrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E6912F2842300C31A83 /* apiwrapper.h */; };
+		43002E9912F2842300C31A83 /* bitpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E6A12F2842300C31A83 /* bitpack.c */; };
+		43002E9A12F2842300C31A83 /* bitpack.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E6B12F2842300C31A83 /* bitpack.h */; };
+		43002E9B12F2842300C31A83 /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E6C12F2842300C31A83 /* cpu.c */; };
+		43002E9C12F2842300C31A83 /* cpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E6D12F2842300C31A83 /* cpu.h */; };
+		43002E9D12F2842300C31A83 /* dct.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E6E12F2842300C31A83 /* dct.h */; };
+		43002E9E12F2842300C31A83 /* decapiwrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E6F12F2842300C31A83 /* decapiwrapper.c */; };
+		43002E9F12F2842300C31A83 /* decinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7012F2842300C31A83 /* decinfo.c */; };
+		43002EA012F2842300C31A83 /* decint.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E7112F2842300C31A83 /* decint.h */; };
+		43002EA112F2842300C31A83 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7212F2842300C31A83 /* decode.c */; };
+		43002EA212F2842300C31A83 /* dequant.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7312F2842300C31A83 /* dequant.c */; };
+		43002EA312F2842300C31A83 /* dequant.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E7412F2842300C31A83 /* dequant.h */; };
+		43002EA412F2842300C31A83 /* encapiwrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7512F2842300C31A83 /* encapiwrapper.c */; };
+		43002EA512F2842300C31A83 /* encfrag.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7612F2842300C31A83 /* encfrag.c */; };
+		43002EA612F2842300C31A83 /* encinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7712F2842300C31A83 /* encinfo.c */; };
+		43002EA712F2842300C31A83 /* encint.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E7812F2842300C31A83 /* encint.h */; };
+		43002EA812F2842300C31A83 /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7912F2842300C31A83 /* encode.c */; };
+		43002EAA12F2842300C31A83 /* enquant.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7B12F2842300C31A83 /* enquant.c */; };
+		43002EAB12F2842300C31A83 /* enquant.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E7C12F2842300C31A83 /* enquant.h */; };
+		43002EAC12F2842300C31A83 /* fdct.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7D12F2842300C31A83 /* fdct.c */; };
+		43002EAD12F2842300C31A83 /* fragment.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7E12F2842300C31A83 /* fragment.c */; };
+		43002EAE12F2842300C31A83 /* huffdec.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E7F12F2842300C31A83 /* huffdec.c */; };
+		43002EAF12F2842300C31A83 /* huffdec.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E8012F2842300C31A83 /* huffdec.h */; };
+		43002EB012F2842300C31A83 /* huffenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E8112F2842300C31A83 /* huffenc.c */; };
+		43002EB112F2842300C31A83 /* huffenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E8212F2842300C31A83 /* huffenc.h */; };
+		43002EB212F2842300C31A83 /* huffman.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E8312F2842300C31A83 /* huffman.h */; };
+		43002EB312F2842300C31A83 /* idct.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E8412F2842300C31A83 /* idct.c */; };
+		43002EB412F2842300C31A83 /* info.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E8512F2842300C31A83 /* info.c */; };
+		43002EB512F2842300C31A83 /* internal.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E8612F2842300C31A83 /* internal.c */; };
+		43002EB612F2842300C31A83 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E8712F2842300C31A83 /* internal.h */; };
+		43002EB712F2842300C31A83 /* mathops.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E8812F2842300C31A83 /* mathops.c */; };
+		43002EB812F2842300C31A83 /* mathops.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E8912F2842300C31A83 /* mathops.h */; };
+		43002EB912F2842300C31A83 /* mcenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E8A12F2842300C31A83 /* mcenc.c */; };
+		43002EBA12F2842300C31A83 /* modedec.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E8B12F2842300C31A83 /* modedec.h */; };
+		43002EBB12F2842300C31A83 /* ocintrin.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E8C12F2842300C31A83 /* ocintrin.h */; };
+		43002EBC12F2842300C31A83 /* quant.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E8D12F2842300C31A83 /* quant.c */; };
+		43002EBD12F2842300C31A83 /* quant.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002E8E12F2842300C31A83 /* quant.h */; };
+		43002EBE12F2842300C31A83 /* rate.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E8F12F2842300C31A83 /* rate.c */; };
+		43002EBF12F2842300C31A83 /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E9012F2842300C31A83 /* state.c */; };
+		43002EC012F2842300C31A83 /* tokenize.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002E9112F2842300C31A83 /* tokenize.c */; };
+		43002ECE12F2847400C31A83 /* mmxencfrag.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002EC212F2847400C31A83 /* mmxencfrag.c */; };
+		43002ECF12F2847400C31A83 /* mmxfdct.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002EC312F2847400C31A83 /* mmxfdct.c */; };
+		43002ED012F2847400C31A83 /* mmxfrag.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002EC412F2847400C31A83 /* mmxfrag.c */; };
+		43002ED112F2847400C31A83 /* mmxfrag.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002EC512F2847400C31A83 /* mmxfrag.h */; };
+		43002ED212F2847400C31A83 /* mmxidct.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002EC612F2847400C31A83 /* mmxidct.c */; };
+		43002ED312F2847400C31A83 /* mmxloop.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002EC712F2847400C31A83 /* mmxloop.h */; };
+		43002ED412F2847400C31A83 /* mmxstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002EC812F2847400C31A83 /* mmxstate.c */; };
+		43002ED512F2847400C31A83 /* sse2fdct.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002EC912F2847400C31A83 /* sse2fdct.c */; };
+		43002ED612F2847400C31A83 /* x86enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002ECA12F2847400C31A83 /* x86enc.c */; };
+		43002ED712F2847400C31A83 /* x86enc.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002ECB12F2847400C31A83 /* x86enc.h */; };
+		43002ED812F2847400C31A83 /* x86int.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002ECC12F2847400C31A83 /* x86int.h */; };
+		43002ED912F2847400C31A83 /* x86state.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002ECD12F2847400C31A83 /* x86state.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43002E4C12F282DA00C31A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43002E4212F282DA00C31A83 /* Ogg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4300283612F24CFC00C31A83 /* Ogg.framework */;
+			remoteInfo = "Mac Framework";
+		};
+		43002E5312F282DA00C31A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43002E4512F282DA00C31A83 /* Vorbis.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4300283612F24CFC00C31A83 /* Vorbis.framework */;
+			remoteInfo = "Mac Framework";
+		};
+		43002E5A12F2837700C31A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43002E4512F282DA00C31A83 /* Vorbis.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4300283512F24CFC00C31A83 /* Mac Framework */;
+			remoteInfo = "Mac Framework";
+		};
+		43002E5C12F2837700C31A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43002E4212F282DA00C31A83 /* Ogg.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4300283512F24CFC00C31A83 /* Mac Framework */;
+			remoteInfo = "Mac Framework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4300283612F24CFC00C31A83 /* Theora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Theora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4300283F12F24D6C00C31A83 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = configs/Base.xcconfig; sourceTree = "<group>"; };
+		4300286A12F2561D00C31A83 /* Base-All.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Base-All.xcconfig"; path = "configs/Base-All.xcconfig"; sourceTree = "<group>"; };
+		43002E4212F282DA00C31A83 /* Ogg.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Ogg.xcodeproj; sourceTree = "<group>"; };
+		43002E4512F282DA00C31A83 /* Vorbis.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Vorbis.xcodeproj; sourceTree = "<group>"; };
+		43002E5712F2830C00C31A83 /* Theora-All.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Theora-All.xcconfig"; path = "configs/Theora-All.xcconfig"; sourceTree = "<group>"; };
+		43002E5812F2830C00C31A83 /* Theora-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Theora-Debug.xcconfig"; path = "configs/Theora-Debug.xcconfig"; sourceTree = "<group>"; };
+		43002E5912F2830C00C31A83 /* Theora-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Theora-Release.xcconfig"; path = "configs/Theora-Release.xcconfig"; sourceTree = "<group>"; };
+		43002E6312F2842300C31A83 /* codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = codec.h; path = external/libtheora/include/theora/codec.h; sourceTree = "<group>"; };
+		43002E6412F2842300C31A83 /* theora.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = theora.h; path = external/libtheora/include/theora/theora.h; sourceTree = "<group>"; };
+		43002E6512F2842300C31A83 /* theoradec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = theoradec.h; path = external/libtheora/include/theora/theoradec.h; sourceTree = "<group>"; };
+		43002E6612F2842300C31A83 /* theoraenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = theoraenc.h; path = external/libtheora/include/theora/theoraenc.h; sourceTree = "<group>"; };
+		43002E6712F2842300C31A83 /* analyze.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = analyze.c; path = external/libtheora/lib/analyze.c; sourceTree = "<group>"; };
+		43002E6812F2842300C31A83 /* apiwrapper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = apiwrapper.c; path = external/libtheora/lib/apiwrapper.c; sourceTree = "<group>"; };
+		43002E6912F2842300C31A83 /* apiwrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = apiwrapper.h; path = external/libtheora/lib/apiwrapper.h; sourceTree = "<group>"; };
+		43002E6A12F2842300C31A83 /* bitpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bitpack.c; path = external/libtheora/lib/bitpack.c; sourceTree = "<group>"; };
+		43002E6B12F2842300C31A83 /* bitpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bitpack.h; path = external/libtheora/lib/bitpack.h; sourceTree = "<group>"; };
+		43002E6C12F2842300C31A83 /* cpu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpu.c; path = external/libtheora/lib/cpu.c; sourceTree = "<group>"; };
+		43002E6D12F2842300C31A83 /* cpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpu.h; path = external/libtheora/lib/cpu.h; sourceTree = "<group>"; };
+		43002E6E12F2842300C31A83 /* dct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dct.h; path = external/libtheora/lib/dct.h; sourceTree = "<group>"; };
+		43002E6F12F2842300C31A83 /* decapiwrapper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = decapiwrapper.c; path = external/libtheora/lib/decapiwrapper.c; sourceTree = "<group>"; };
+		43002E7012F2842300C31A83 /* decinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = decinfo.c; path = external/libtheora/lib/decinfo.c; sourceTree = "<group>"; };
+		43002E7112F2842300C31A83 /* decint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = decint.h; path = external/libtheora/lib/decint.h; sourceTree = "<group>"; };
+		43002E7212F2842300C31A83 /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = decode.c; path = external/libtheora/lib/decode.c; sourceTree = "<group>"; };
+		43002E7312F2842300C31A83 /* dequant.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dequant.c; path = external/libtheora/lib/dequant.c; sourceTree = "<group>"; };
+		43002E7412F2842300C31A83 /* dequant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dequant.h; path = external/libtheora/lib/dequant.h; sourceTree = "<group>"; };
+		43002E7512F2842300C31A83 /* encapiwrapper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encapiwrapper.c; path = external/libtheora/lib/encapiwrapper.c; sourceTree = "<group>"; };
+		43002E7612F2842300C31A83 /* encfrag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encfrag.c; path = external/libtheora/lib/encfrag.c; sourceTree = "<group>"; };
+		43002E7712F2842300C31A83 /* encinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encinfo.c; path = external/libtheora/lib/encinfo.c; sourceTree = "<group>"; };
+		43002E7812F2842300C31A83 /* encint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = encint.h; path = external/libtheora/lib/encint.h; sourceTree = "<group>"; };
+		43002E7912F2842300C31A83 /* encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encode.c; path = external/libtheora/lib/encode.c; sourceTree = "<group>"; };
+		43002E7A12F2842300C31A83 /* encoder_disabled.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encoder_disabled.c; path = external/libtheora/lib/encoder_disabled.c; sourceTree = "<group>"; };
+		43002E7B12F2842300C31A83 /* enquant.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = enquant.c; path = external/libtheora/lib/enquant.c; sourceTree = "<group>"; };
+		43002E7C12F2842300C31A83 /* enquant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enquant.h; path = external/libtheora/lib/enquant.h; sourceTree = "<group>"; };
+		43002E7D12F2842300C31A83 /* fdct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fdct.c; path = external/libtheora/lib/fdct.c; sourceTree = "<group>"; };
+		43002E7E12F2842300C31A83 /* fragment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fragment.c; path = external/libtheora/lib/fragment.c; sourceTree = "<group>"; };
+		43002E7F12F2842300C31A83 /* huffdec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = huffdec.c; path = external/libtheora/lib/huffdec.c; sourceTree = "<group>"; };
+		43002E8012F2842300C31A83 /* huffdec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = huffdec.h; path = external/libtheora/lib/huffdec.h; sourceTree = "<group>"; };
+		43002E8112F2842300C31A83 /* huffenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = huffenc.c; path = external/libtheora/lib/huffenc.c; sourceTree = "<group>"; };
+		43002E8212F2842300C31A83 /* huffenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = huffenc.h; path = external/libtheora/lib/huffenc.h; sourceTree = "<group>"; };
+		43002E8312F2842300C31A83 /* huffman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = huffman.h; path = external/libtheora/lib/huffman.h; sourceTree = "<group>"; };
+		43002E8412F2842300C31A83 /* idct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = idct.c; path = external/libtheora/lib/idct.c; sourceTree = "<group>"; };
+		43002E8512F2842300C31A83 /* info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = info.c; path = external/libtheora/lib/info.c; sourceTree = "<group>"; };
+		43002E8612F2842300C31A83 /* internal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = internal.c; path = external/libtheora/lib/internal.c; sourceTree = "<group>"; };
+		43002E8712F2842300C31A83 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = internal.h; path = external/libtheora/lib/internal.h; sourceTree = "<group>"; };
+		43002E8812F2842300C31A83 /* mathops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mathops.c; path = external/libtheora/lib/mathops.c; sourceTree = "<group>"; };
+		43002E8912F2842300C31A83 /* mathops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mathops.h; path = external/libtheora/lib/mathops.h; sourceTree = "<group>"; };
+		43002E8A12F2842300C31A83 /* mcenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mcenc.c; path = external/libtheora/lib/mcenc.c; sourceTree = "<group>"; };
+		43002E8B12F2842300C31A83 /* modedec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = modedec.h; path = external/libtheora/lib/modedec.h; sourceTree = "<group>"; };
+		43002E8C12F2842300C31A83 /* ocintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ocintrin.h; path = external/libtheora/lib/ocintrin.h; sourceTree = "<group>"; };
+		43002E8D12F2842300C31A83 /* quant.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = quant.c; path = external/libtheora/lib/quant.c; sourceTree = "<group>"; };
+		43002E8E12F2842300C31A83 /* quant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = quant.h; path = external/libtheora/lib/quant.h; sourceTree = "<group>"; };
+		43002E8F12F2842300C31A83 /* rate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rate.c; path = external/libtheora/lib/rate.c; sourceTree = "<group>"; };
+		43002E9012F2842300C31A83 /* state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = state.c; path = external/libtheora/lib/state.c; sourceTree = "<group>"; };
+		43002E9112F2842300C31A83 /* tokenize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tokenize.c; path = external/libtheora/lib/tokenize.c; sourceTree = "<group>"; };
+		43002EC212F2847400C31A83 /* mmxencfrag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mmxencfrag.c; sourceTree = "<group>"; };
+		43002EC312F2847400C31A83 /* mmxfdct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mmxfdct.c; sourceTree = "<group>"; };
+		43002EC412F2847400C31A83 /* mmxfrag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mmxfrag.c; sourceTree = "<group>"; };
+		43002EC512F2847400C31A83 /* mmxfrag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmxfrag.h; sourceTree = "<group>"; };
+		43002EC612F2847400C31A83 /* mmxidct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mmxidct.c; sourceTree = "<group>"; };
+		43002EC712F2847400C31A83 /* mmxloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmxloop.h; sourceTree = "<group>"; };
+		43002EC812F2847400C31A83 /* mmxstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mmxstate.c; sourceTree = "<group>"; };
+		43002EC912F2847400C31A83 /* sse2fdct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sse2fdct.c; sourceTree = "<group>"; };
+		43002ECA12F2847400C31A83 /* x86enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x86enc.c; sourceTree = "<group>"; };
+		43002ECB12F2847400C31A83 /* x86enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x86enc.h; sourceTree = "<group>"; };
+		43002ECC12F2847400C31A83 /* x86int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x86int.h; sourceTree = "<group>"; };
+		43002ECD12F2847400C31A83 /* x86state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x86state.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4300283412F24CFC00C31A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43002E5512F282EC00C31A83 /* Ogg.framework in Frameworks */,
+				43002E5612F282ED00C31A83 /* Vorbis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4300281A12F24C1E00C31A83 = {
+			isa = PBXGroup;
+			children = (
+				4300283012F24CCC00C31A83 /* Configs */,
+				4300284A12F24E9C00C31A83 /* Code */,
+				4300284C12F24F0900C31A83 /* Third Party */,
+				4300284B12F24ECF00C31A83 /* System Frameworks */,
+				4300283712F24CFC00C31A83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4300283012F24CCC00C31A83 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				43002E5712F2830C00C31A83 /* Theora-All.xcconfig */,
+				43002E5812F2830C00C31A83 /* Theora-Debug.xcconfig */,
+				43002E5912F2830C00C31A83 /* Theora-Release.xcconfig */,
+				4300286A12F2561D00C31A83 /* Base-All.xcconfig */,
+				4300283F12F24D6C00C31A83 /* Base.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		4300283712F24CFC00C31A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4300283612F24CFC00C31A83 /* Theora.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4300284A12F24E9C00C31A83 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				43002EC112F2847400C31A83 /* x86 */,
+				43002E6312F2842300C31A83 /* codec.h */,
+				43002E6412F2842300C31A83 /* theora.h */,
+				43002E6512F2842300C31A83 /* theoradec.h */,
+				43002E6612F2842300C31A83 /* theoraenc.h */,
+				43002E6712F2842300C31A83 /* analyze.c */,
+				43002E6812F2842300C31A83 /* apiwrapper.c */,
+				43002E6912F2842300C31A83 /* apiwrapper.h */,
+				43002E6A12F2842300C31A83 /* bitpack.c */,
+				43002E6B12F2842300C31A83 /* bitpack.h */,
+				43002E6C12F2842300C31A83 /* cpu.c */,
+				43002E6D12F2842300C31A83 /* cpu.h */,
+				43002E6E12F2842300C31A83 /* dct.h */,
+				43002E6F12F2842300C31A83 /* decapiwrapper.c */,
+				43002E7012F2842300C31A83 /* decinfo.c */,
+				43002E7112F2842300C31A83 /* decint.h */,
+				43002E7212F2842300C31A83 /* decode.c */,
+				43002E7312F2842300C31A83 /* dequant.c */,
+				43002E7412F2842300C31A83 /* dequant.h */,
+				43002E7512F2842300C31A83 /* encapiwrapper.c */,
+				43002E7612F2842300C31A83 /* encfrag.c */,
+				43002E7712F2842300C31A83 /* encinfo.c */,
+				43002E7812F2842300C31A83 /* encint.h */,
+				43002E7912F2842300C31A83 /* encode.c */,
+				43002E7A12F2842300C31A83 /* encoder_disabled.c */,
+				43002E7B12F2842300C31A83 /* enquant.c */,
+				43002E7C12F2842300C31A83 /* enquant.h */,
+				43002E7D12F2842300C31A83 /* fdct.c */,
+				43002E7E12F2842300C31A83 /* fragment.c */,
+				43002E7F12F2842300C31A83 /* huffdec.c */,
+				43002E8012F2842300C31A83 /* huffdec.h */,
+				43002E8112F2842300C31A83 /* huffenc.c */,
+				43002E8212F2842300C31A83 /* huffenc.h */,
+				43002E8312F2842300C31A83 /* huffman.h */,
+				43002E8412F2842300C31A83 /* idct.c */,
+				43002E8512F2842300C31A83 /* info.c */,
+				43002E8612F2842300C31A83 /* internal.c */,
+				43002E8712F2842300C31A83 /* internal.h */,
+				43002E8812F2842300C31A83 /* mathops.c */,
+				43002E8912F2842300C31A83 /* mathops.h */,
+				43002E8A12F2842300C31A83 /* mcenc.c */,
+				43002E8B12F2842300C31A83 /* modedec.h */,
+				43002E8C12F2842300C31A83 /* ocintrin.h */,
+				43002E8D12F2842300C31A83 /* quant.c */,
+				43002E8E12F2842300C31A83 /* quant.h */,
+				43002E8F12F2842300C31A83 /* rate.c */,
+				43002E9012F2842300C31A83 /* state.c */,
+				43002E9112F2842300C31A83 /* tokenize.c */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		4300284B12F24ECF00C31A83 /* System Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		4300284C12F24F0900C31A83 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				43002E4212F282DA00C31A83 /* Ogg.xcodeproj */,
+				43002E4512F282DA00C31A83 /* Vorbis.xcodeproj */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		43002E4312F282DA00C31A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43002E4D12F282DA00C31A83 /* Ogg.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43002E4612F282DA00C31A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43002E5412F282DA00C31A83 /* Vorbis.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43002EC112F2847400C31A83 /* x86 */ = {
+			isa = PBXGroup;
+			children = (
+				43002EC212F2847400C31A83 /* mmxencfrag.c */,
+				43002EC312F2847400C31A83 /* mmxfdct.c */,
+				43002EC412F2847400C31A83 /* mmxfrag.c */,
+				43002EC512F2847400C31A83 /* mmxfrag.h */,
+				43002EC612F2847400C31A83 /* mmxidct.c */,
+				43002EC712F2847400C31A83 /* mmxloop.h */,
+				43002EC812F2847400C31A83 /* mmxstate.c */,
+				43002EC912F2847400C31A83 /* sse2fdct.c */,
+				43002ECA12F2847400C31A83 /* x86enc.c */,
+				43002ECB12F2847400C31A83 /* x86enc.h */,
+				43002ECC12F2847400C31A83 /* x86int.h */,
+				43002ECD12F2847400C31A83 /* x86state.c */,
+			);
+			name = x86;
+			path = external/libtheora/lib/x86;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4300283112F24CFC00C31A83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43002E9212F2842300C31A83 /* codec.h in Headers */,
+				43002E9312F2842300C31A83 /* theora.h in Headers */,
+				43002E9412F2842300C31A83 /* theoradec.h in Headers */,
+				43002E9512F2842300C31A83 /* theoraenc.h in Headers */,
+				43002E9812F2842300C31A83 /* apiwrapper.h in Headers */,
+				43002E9A12F2842300C31A83 /* bitpack.h in Headers */,
+				43002E9C12F2842300C31A83 /* cpu.h in Headers */,
+				43002E9D12F2842300C31A83 /* dct.h in Headers */,
+				43002EA012F2842300C31A83 /* decint.h in Headers */,
+				43002EA312F2842300C31A83 /* dequant.h in Headers */,
+				43002EA712F2842300C31A83 /* encint.h in Headers */,
+				43002EAB12F2842300C31A83 /* enquant.h in Headers */,
+				43002EAF12F2842300C31A83 /* huffdec.h in Headers */,
+				43002EB112F2842300C31A83 /* huffenc.h in Headers */,
+				43002EB212F2842300C31A83 /* huffman.h in Headers */,
+				43002EB612F2842300C31A83 /* internal.h in Headers */,
+				43002EB812F2842300C31A83 /* mathops.h in Headers */,
+				43002EBA12F2842300C31A83 /* modedec.h in Headers */,
+				43002EBB12F2842300C31A83 /* ocintrin.h in Headers */,
+				43002EBD12F2842300C31A83 /* quant.h in Headers */,
+				43002ED112F2847400C31A83 /* mmxfrag.h in Headers */,
+				43002ED312F2847400C31A83 /* mmxloop.h in Headers */,
+				43002ED712F2847400C31A83 /* x86enc.h in Headers */,
+				43002ED812F2847400C31A83 /* x86int.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4300283512F24CFC00C31A83 /* Mac Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4300283B12F24CFD00C31A83 /* Build configuration list for PBXNativeTarget "Mac Framework" */;
+			buildPhases = (
+				4300284E12F24F2D00C31A83 /* Fetch Source */,
+				4300283112F24CFC00C31A83 /* Headers */,
+				4300283212F24CFC00C31A83 /* Resources */,
+				4300283312F24CFC00C31A83 /* Sources */,
+				4300283412F24CFC00C31A83 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43002E5B12F2837700C31A83 /* PBXTargetDependency */,
+				43002E5D12F2837700C31A83 /* PBXTargetDependency */,
+			);
+			name = "Mac Framework";
+			productName = Untitled;
+			productReference = 4300283612F24CFC00C31A83 /* Theora.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4300281C12F24C1E00C31A83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				ORGANIZATIONNAME = mp.dak10.;
+			};
+			buildConfigurationList = 4300281F12F24C1E00C31A83 /* Build configuration list for PBXProject "Theora" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 4300281A12F24C1E00C31A83;
+			productRefGroup = 4300283712F24CFC00C31A83 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 43002E4312F282DA00C31A83 /* Products */;
+					ProjectRef = 43002E4212F282DA00C31A83 /* Ogg.xcodeproj */;
+				},
+				{
+					ProductGroup = 43002E4612F282DA00C31A83 /* Products */;
+					ProjectRef = 43002E4512F282DA00C31A83 /* Vorbis.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4300283512F24CFC00C31A83 /* Mac Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		43002E4D12F282DA00C31A83 /* Ogg.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Ogg.framework;
+			remoteRef = 43002E4C12F282DA00C31A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		43002E5412F282DA00C31A83 /* Vorbis.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Vorbis.framework;
+			remoteRef = 43002E5312F282DA00C31A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4300283212F24CFC00C31A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4300284E12F24F2D00C31A83 /* Fetch Source */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fetch Source";
+			outputPaths = (
+				"$(SRCROOT)/external/$(PRODUCT_INFO_SHORTNAME)/",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4300283312F24CFC00C31A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43002E9612F2842300C31A83 /* analyze.c in Sources */,
+				43002E9712F2842300C31A83 /* apiwrapper.c in Sources */,
+				43002E9912F2842300C31A83 /* bitpack.c in Sources */,
+				43002E9B12F2842300C31A83 /* cpu.c in Sources */,
+				43002E9E12F2842300C31A83 /* decapiwrapper.c in Sources */,
+				43002E9F12F2842300C31A83 /* decinfo.c in Sources */,
+				43002EA112F2842300C31A83 /* decode.c in Sources */,
+				43002EA212F2842300C31A83 /* dequant.c in Sources */,
+				43002EA412F2842300C31A83 /* encapiwrapper.c in Sources */,
+				43002EA512F2842300C31A83 /* encfrag.c in Sources */,
+				43002EA612F2842300C31A83 /* encinfo.c in Sources */,
+				43002EA812F2842300C31A83 /* encode.c in Sources */,
+				43002EAA12F2842300C31A83 /* enquant.c in Sources */,
+				43002EAC12F2842300C31A83 /* fdct.c in Sources */,
+				43002EAD12F2842300C31A83 /* fragment.c in Sources */,
+				43002EAE12F2842300C31A83 /* huffdec.c in Sources */,
+				43002EB012F2842300C31A83 /* huffenc.c in Sources */,
+				43002EB312F2842300C31A83 /* idct.c in Sources */,
+				43002EB412F2842300C31A83 /* info.c in Sources */,
+				43002EB512F2842300C31A83 /* internal.c in Sources */,
+				43002EB712F2842300C31A83 /* mathops.c in Sources */,
+				43002EB912F2842300C31A83 /* mcenc.c in Sources */,
+				43002EBC12F2842300C31A83 /* quant.c in Sources */,
+				43002EBE12F2842300C31A83 /* rate.c in Sources */,
+				43002EBF12F2842300C31A83 /* state.c in Sources */,
+				43002EC012F2842300C31A83 /* tokenize.c in Sources */,
+				43002ECE12F2847400C31A83 /* mmxencfrag.c in Sources */,
+				43002ECF12F2847400C31A83 /* mmxfdct.c in Sources */,
+				43002ED012F2847400C31A83 /* mmxfrag.c in Sources */,
+				43002ED212F2847400C31A83 /* mmxidct.c in Sources */,
+				43002ED412F2847400C31A83 /* mmxstate.c in Sources */,
+				43002ED512F2847400C31A83 /* sse2fdct.c in Sources */,
+				43002ED612F2847400C31A83 /* x86enc.c in Sources */,
+				43002ED912F2847400C31A83 /* x86state.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43002E5B12F2837700C31A83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mac Framework";
+			targetProxy = 43002E5A12F2837700C31A83 /* PBXContainerItemProxy */;
+		};
+		43002E5D12F2837700C31A83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mac Framework";
+			targetProxy = 43002E5C12F2837700C31A83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4300281D12F24C1E00C31A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4300283F12F24D6C00C31A83 /* Base.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4300281E12F24C1E00C31A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4300283F12F24D6C00C31A83 /* Base.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4300283912F24CFD00C31A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43002E5912F2830C00C31A83 /* Theora-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4300283A12F24CFD00C31A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43002E5812F2830C00C31A83 /* Theora-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4300281F12F24C1E00C31A83 /* Build configuration list for PBXProject "Theora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4300281E12F24C1E00C31A83 /* Release */,
+				4300281D12F24C1E00C31A83 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4300283B12F24CFD00C31A83 /* Build configuration list for PBXNativeTarget "Mac Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4300283912F24CFD00C31A83 /* Release */,
+				4300283A12F24CFD00C31A83 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4300281C12F24C1E00C31A83 /* Project object */;
+}
