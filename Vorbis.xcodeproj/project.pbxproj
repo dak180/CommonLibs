@@ -83,14 +83,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 43002D7112F27F1D00C31A83 /* Ogg.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 4300283612F24CFC00C31A83 /* Ogg.framework */;
+			remoteGlobalIDString = 4300283612F24CFC00C31A83;
 			remoteInfo = "Mac Framework";
 		};
 		43002E2D12F280DF00C31A83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 43002D7112F27F1D00C31A83 /* Ogg.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 4300283512F24CFC00C31A83 /* Mac Framework */;
+			remoteGlobalIDString = 4300283512F24CFC00C31A83;
 			remoteInfo = "Mac Framework";
 		};
 /* End PBXContainerItemProxy section */
@@ -581,6 +581,20 @@
 			};
 			name = Debug;
 		};
+		43D8CE4D12F5BA4C008B0E4F /* StaticAnalyzer */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4300283F12F24D6C00C31A83 /* Base.xcconfig */;
+			buildSettings = {
+			};
+			name = StaticAnalyzer;
+		};
+		43D8CE4E12F5BA4C008B0E4F /* StaticAnalyzer */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43002D7C12F27F4100C31A83 /* Vorbis-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = StaticAnalyzer;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,6 +603,7 @@
 			buildConfigurations = (
 				4300281E12F24C1E00C31A83 /* Release */,
 				4300281D12F24C1E00C31A83 /* Debug */,
+				43D8CE4D12F5BA4C008B0E4F /* StaticAnalyzer */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -598,6 +613,7 @@
 			buildConfigurations = (
 				4300283912F24CFD00C31A83 /* Release */,
 				4300283A12F24CFD00C31A83 /* Debug */,
+				43D8CE4E12F5BA4C008B0E4F /* StaticAnalyzer */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

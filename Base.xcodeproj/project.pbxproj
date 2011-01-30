@@ -113,7 +113,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				ORGANIZATIONNAME = mp.dak10.;
 			};
-			buildConfigurationList = 4300281F12F24C1E00C31A83 /* Build configuration list for PBXProject "Ogg" */;
+			buildConfigurationList = 4300281F12F24C1E00C31A83 /* Build configuration list for PBXProject "Base" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -198,14 +198,28 @@
 			};
 			name = Debug;
 		};
+		43D8CE6B12F5BAD8008B0E4F /* StaticAnalyzer */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4300283F12F24D6C00C31A83 /* Base.xcconfig */;
+			buildSettings = {
+			};
+			name = StaticAnalyzer;
+		};
+		43D8CE6C12F5BAD8008B0E4F /* StaticAnalyzer */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = StaticAnalyzer;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4300281F12F24C1E00C31A83 /* Build configuration list for PBXProject "Ogg" */ = {
+		4300281F12F24C1E00C31A83 /* Build configuration list for PBXProject "Base" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4300281E12F24C1E00C31A83 /* Release */,
 				4300281D12F24C1E00C31A83 /* Debug */,
+				43D8CE6B12F5BAD8008B0E4F /* StaticAnalyzer */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -215,6 +229,7 @@
 			buildConfigurations = (
 				4300283912F24CFD00C31A83 /* Release */,
 				4300283A12F24CFD00C31A83 /* Debug */,
+				43D8CE6C12F5BAD8008B0E4F /* StaticAnalyzer */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
