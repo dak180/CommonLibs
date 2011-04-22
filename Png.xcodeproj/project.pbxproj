@@ -27,6 +27,10 @@
 		43002D5512F27D5600C31A83 /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002D4212F27D5600C31A83 /* pngwrite.c */; };
 		43002D5612F27D5600C31A83 /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002D4312F27D5600C31A83 /* pngwtran.c */; };
 		43002D5712F27D5600C31A83 /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002D4412F27D5600C31A83 /* pngwutil.c */; };
+		4357EFA213610E7C00EB008B /* pngdebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357EF9F13610E7C00EB008B /* pngdebug.h */; };
+		4357EFA313610E7C00EB008B /* pnginfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357EFA013610E7C00EB008B /* pnginfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4357EFA413610E7C00EB008B /* pngstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357EFA113610E7C00EB008B /* pngstruct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4357EFB11361119D00EB008B /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357EFB01361119D00EB008B /* pnglibconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		43002D4212F27D5600C31A83 /* pngwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwrite.c; path = external/libpng/pngwrite.c; sourceTree = "<group>"; };
 		43002D4312F27D5600C31A83 /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwtran.c; path = external/libpng/pngwtran.c; sourceTree = "<group>"; };
 		43002D4412F27D5600C31A83 /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwutil.c; path = external/libpng/pngwutil.c; sourceTree = "<group>"; };
+		4357EF9F13610E7C00EB008B /* pngdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pngdebug.h; path = external/libpng/pngdebug.h; sourceTree = "<group>"; };
+		4357EFA013610E7C00EB008B /* pnginfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pnginfo.h; path = external/libpng/pnginfo.h; sourceTree = "<group>"; };
+		4357EFA113610E7C00EB008B /* pngstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pngstruct.h; path = external/libpng/pngstruct.h; sourceTree = "<group>"; };
+		4357EFB01361119D00EB008B /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pnglibconf.h; path = external/libpng/pnglibconf.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,10 @@
 		4300284A12F24E9C00C31A83 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				4357EFB01361119D00EB008B /* pnglibconf.h */,
+				4357EF9F13610E7C00EB008B /* pngdebug.h */,
+				4357EFA013610E7C00EB008B /* pnginfo.h */,
+				4357EFA113610E7C00EB008B /* pngstruct.h */,
 				43002D3212F27D5600C31A83 /* png.c */,
 				43002D3312F27D5600C31A83 /* png.h */,
 				43002D3412F27D5600C31A83 /* pngconf.h */,
@@ -177,6 +189,10 @@
 				43002D4612F27D5600C31A83 /* png.h in Headers */,
 				43002D4712F27D5600C31A83 /* pngconf.h in Headers */,
 				43002D4C12F27D5600C31A83 /* pngpriv.h in Headers */,
+				4357EFA213610E7C00EB008B /* pngdebug.h in Headers */,
+				4357EFA313610E7C00EB008B /* pnginfo.h in Headers */,
+				4357EFA413610E7C00EB008B /* pngstruct.h in Headers */,
+				4357EFB11361119D00EB008B /* pnglibconf.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +204,7 @@
 			buildConfigurationList = 4300283B12F24CFD00C31A83 /* Build configuration list for PBXNativeTarget "Mac Framework" */;
 			buildPhases = (
 				4300284E12F24F2D00C31A83 /* Fetch Source */,
+				4357EFAD1361112600EB008B /* Generate headers */,
 				4300283112F24CFC00C31A83 /* Headers */,
 				4300283212F24CFC00C31A83 /* Resources */,
 				4300283312F24CFC00C31A83 /* Sources */,
@@ -273,6 +290,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}";
+		};
+		4357EFAD1361112600EB008B /* Generate headers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate headers";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${SRCROOT}/external/libpng\n\nscripts/pnglibconf.mak\nexit ${?}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
