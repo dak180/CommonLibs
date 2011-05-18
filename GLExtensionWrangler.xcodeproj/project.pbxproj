@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		436A555E13832E430055D3E5 /* Fetch Source */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 436A556213832EAE0055D3E5 /* Build configuration list for PBXAggregateTarget "Fetch Source" */;
+			buildPhases = (
+				436A555D13832E430055D3E5 /* Mac Framework */,
+			);
+			dependencies = (
+			);
+			name = "Fetch Source";
+			productName = "Fetch Source";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		436A56A61383617D0055D3E5 /* glew.h in Headers */ = {isa = PBXBuildFile; fileRef = 436A56A3138361760055D3E5 /* glew.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436A56AA138361C20055D3E5 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 436A56A7138361BF0055D3E5 /* glew.c */; };
+		436A56AE138362DE0055D3E5 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436A56AD138362DE0055D3E5 /* AGL.framework */; };
+		436A56B0138362DE0055D3E5 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436A56AF138362DE0055D3E5 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		436A558D13832FC10055D3E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4300281C12F24C1E00C31A83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 436A555E13832E430055D3E5;
+			remoteInfo = "Fetch Source";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4300283612F24CFC00C31A83 /* GLExtensionWrangler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLExtensionWrangler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4300283F12F24D6C00C31A83 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = configs/Base.xcconfig; sourceTree = "<group>"; };
+		4300286A12F2561D00C31A83 /* Base-All.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Base-All.xcconfig"; path = "configs/Base-All.xcconfig"; sourceTree = "<group>"; };
+		436A569A13835F9E0055D3E5 /* Glew-All.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Glew-All.xcconfig"; path = "configs/Glew-All.xcconfig"; sourceTree = "<group>"; };
+		436A569B13835F9F0055D3E5 /* Glew-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Glew-Debug.xcconfig"; path = "configs/Glew-Debug.xcconfig"; sourceTree = "<group>"; };
+		436A569C13835F9F0055D3E5 /* Glew-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Glew-Release.xcconfig"; path = "configs/Glew-Release.xcconfig"; sourceTree = "<group>"; };
+		436A56A3138361760055D3E5 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glew.h; path = external/glew/include/GL/glew.h; sourceTree = "<group>"; };
+		436A56A4138361760055D3E5 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glxew.h; path = external/glew/include/GL/glxew.h; sourceTree = "<group>"; };
+		436A56A5138361760055D3E5 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wglew.h; path = external/glew/include/GL/wglew.h; sourceTree = "<group>"; };
+		436A56A7138361BF0055D3E5 /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glew.c; path = external/glew/src/glew.c; sourceTree = "<group>"; };
+		436A56A8138361BF0055D3E5 /* glewinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glewinfo.c; path = external/glew/src/glewinfo.c; sourceTree = "<group>"; };
+		436A56A9138361BF0055D3E5 /* visualinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = visualinfo.c; path = external/glew/src/visualinfo.c; sourceTree = "<group>"; };
+		436A56AD138362DE0055D3E5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = System/Library/Frameworks/AGL.framework; sourceTree = SDKROOT; };
+		436A56AF138362DE0055D3E5 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4300283412F24CFC00C31A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A56AE138362DE0055D3E5 /* AGL.framework in Frameworks */,
+				436A56B0138362DE0055D3E5 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4300281A12F24C1E00C31A83 = {
+			isa = PBXGroup;
+			children = (
+				4300283012F24CCC00C31A83 /* Configs */,
+				4300284A12F24E9C00C31A83 /* Code */,
+				4300284C12F24F0900C31A83 /* Third Party */,
+				4300284B12F24ECF00C31A83 /* System Frameworks */,
+				4300283712F24CFC00C31A83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4300283012F24CCC00C31A83 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				436A569A13835F9E0055D3E5 /* Glew-All.xcconfig */,
+				436A569B13835F9F0055D3E5 /* Glew-Debug.xcconfig */,
+				436A569C13835F9F0055D3E5 /* Glew-Release.xcconfig */,
+				4300286A12F2561D00C31A83 /* Base-All.xcconfig */,
+				4300283F12F24D6C00C31A83 /* Base.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		4300283712F24CFC00C31A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4300283612F24CFC00C31A83 /* GLExtensionWrangler.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4300284A12F24E9C00C31A83 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				436A56A2138361280055D3E5 /* include */,
+				436A56A11383611A0055D3E5 /* lib */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		4300284B12F24ECF00C31A83 /* System Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				436A56AD138362DE0055D3E5 /* AGL.framework */,
+				436A56AF138362DE0055D3E5 /* OpenGL.framework */,
+			);
+			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		4300284C12F24F0900C31A83 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		436A56A11383611A0055D3E5 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				436A56A7138361BF0055D3E5 /* glew.c */,
+				436A56A8138361BF0055D3E5 /* glewinfo.c */,
+				436A56A9138361BF0055D3E5 /* visualinfo.c */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		436A56A2138361280055D3E5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				436A56A3138361760055D3E5 /* glew.h */,
+				436A56A4138361760055D3E5 /* glxew.h */,
+				436A56A5138361760055D3E5 /* wglew.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4300283112F24CFC00C31A83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A56A61383617D0055D3E5 /* glew.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4300283512F24CFC00C31A83 /* Mac Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4300283B12F24CFD00C31A83 /* Build configuration list for PBXNativeTarget "Mac Framework" */;
+			buildPhases = (
+				4300283112F24CFC00C31A83 /* Headers */,
+				4300283212F24CFC00C31A83 /* Resources */,
+				4300283312F24CFC00C31A83 /* Sources */,
+				4300283412F24CFC00C31A83 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				436A558E13832FC10055D3E5 /* PBXTargetDependency */,
+			);
+			name = "Mac Framework";
+			productName = Untitled;
+			productReference = 4300283612F24CFC00C31A83 /* GLExtensionWrangler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4300281C12F24C1E00C31A83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				ORGANIZATIONNAME = mp.dak10.;
+			};
+			buildConfigurationList = 4300281F12F24C1E00C31A83 /* Build configuration list for PBXProject "GLExtensionWrangler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 4300281A12F24C1E00C31A83;
+			productRefGroup = 4300283712F24CFC00C31A83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4300283512F24CFC00C31A83 /* Mac Framework */,
+				436A555E13832E430055D3E5 /* Fetch Source */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4300283212F24CFC00C31A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		436A555D13832E430055D3E5 /* Mac Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Mac Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tgz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4300283312F24CFC00C31A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A56AA138361C20055D3E5 /* glew.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		436A558E13832FC10055D3E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 436A555E13832E430055D3E5 /* Fetch Source */;
+			targetProxy = 436A558D13832FC10055D3E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4300281D12F24C1E00C31A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4300283F12F24D6C00C31A83 /* Base.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4300281E12F24C1E00C31A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4300283F12F24D6C00C31A83 /* Base.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4300283912F24CFD00C31A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436A569C13835F9F0055D3E5 /* Glew-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4300283A12F24CFD00C31A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436A569B13835F9F0055D3E5 /* Glew-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		436A555F13832E430055D3E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436A569A13835F9E0055D3E5 /* Glew-All.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = Release;
+		};
+		436A556013832E430055D3E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436A569A13835F9E0055D3E5 /* Glew-All.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = Debug;
+		};
+		436A556113832E430055D3E5 /* StaticAnalyzer */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436A569A13835F9E0055D3E5 /* Glew-All.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = StaticAnalyzer;
+		};
+		43D8CE6B12F5BAD8008B0E4F /* StaticAnalyzer */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4300283F12F24D6C00C31A83 /* Base.xcconfig */;
+			buildSettings = {
+			};
+			name = StaticAnalyzer;
+		};
+		43D8CE6C12F5BAD8008B0E4F /* StaticAnalyzer */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436A569B13835F9F0055D3E5 /* Glew-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = StaticAnalyzer;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4300281F12F24C1E00C31A83 /* Build configuration list for PBXProject "GLExtensionWrangler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4300281E12F24C1E00C31A83 /* Release */,
+				4300281D12F24C1E00C31A83 /* Debug */,
+				43D8CE6B12F5BAD8008B0E4F /* StaticAnalyzer */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4300283B12F24CFD00C31A83 /* Build configuration list for PBXNativeTarget "Mac Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4300283912F24CFD00C31A83 /* Release */,
+				4300283A12F24CFD00C31A83 /* Debug */,
+				43D8CE6C12F5BAD8008B0E4F /* StaticAnalyzer */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		436A556213832EAE0055D3E5 /* Build configuration list for PBXAggregateTarget "Fetch Source" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				436A555F13832E430055D3E5 /* Release */,
+				436A556013832E430055D3E5 /* Debug */,
+				436A556113832E430055D3E5 /* StaticAnalyzer */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4300281C12F24C1E00C31A83 /* Project object */;
+}
