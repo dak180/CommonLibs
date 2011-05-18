@@ -116,7 +116,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 4300281C12F24C1E00C31A83 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 436A561813834BF40055D3E5 /* Fetch Source */;
+			remoteGlobalIDString = 436A561813834BF40055D3E5;
 			remoteInfo = "Fetch Source";
 		};
 /* End PBXContainerItemProxy section */

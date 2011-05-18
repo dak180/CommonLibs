@@ -25,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 4300281C12F24C1E00C31A83 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 436A555E13832E430055D3E5 /* Fetch Source */;
+			remoteGlobalIDString = 436A555E13832E430055D3E5;
 			remoteInfo = "Fetch Source";
 		};
 /* End PBXContainerItemProxy section */
@@ -113,7 +113,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4300283B12F24CFD00C31A83 /* Build configuration list for PBXNativeTarget "Mac Framework" */;
 			buildPhases = (
-				4300284E12F24F2D00C31A83 /* Fetch Source */,
 				4300283112F24CFC00C31A83 /* Headers */,
 				4300283212F24CFC00C31A83 /* Resources */,
 				4300283312F24CFC00C31A83 /* Sources */,
@@ -170,21 +169,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4300284E12F24F2D00C31A83 /* Fetch Source */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Fetch Source";
-			outputPaths = (
-				"$(SRCROOT)/external/$(PRODUCT_INFO_SHORTNAME)/",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}\n";
-		};
 		436A555D13832E430055D3E5 /* Mac Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -49,6 +49,16 @@
 		43002B4312F2761700C31A83 /* zutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002B2912F2761700C31A83 /* zutil.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		436A575D138363A80055D3E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4300281C12F24C1E00C31A83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 436A564C13834D5F0055D3E5 /* Fetch Source */;
+			remoteInfo = "Fetch Source";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4300283612F24CFC00C31A83 /* Zlib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4300283F12F24D6C00C31A83 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = configs/Base.xcconfig; sourceTree = "<group>"; };
@@ -201,7 +211,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4300283B12F24CFD00C31A83 /* Build configuration list for PBXNativeTarget "Mac Framework" */;
 			buildPhases = (
-				4300284E12F24F2D00C31A83 /* Fetch Source */,
 				4300283112F24CFC00C31A83 /* Headers */,
 				4300283212F24CFC00C31A83 /* Resources */,
 				4300283312F24CFC00C31A83 /* Sources */,
@@ -210,6 +219,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				436A575E138363A80055D3E5 /* PBXTargetDependency */,
 			);
 			name = "Mac Framework";
 			productName = Untitled;
@@ -257,21 +267,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4300284E12F24F2D00C31A83 /* Fetch Source */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Fetch Source";
-			outputPaths = (
-				"$(SRCROOT)/external/$(PRODUCT_INFO_SHORTNAME)/",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}\n";
-		};
 		436A564B13834D5F0055D3E5 /* Mac Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +307,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		436A575E138363A80055D3E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 436A564C13834D5F0055D3E5 /* Fetch Source */;
+			targetProxy = 436A575D138363A80055D3E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4300281D12F24C1E00C31A83 /* Debug */ = {
