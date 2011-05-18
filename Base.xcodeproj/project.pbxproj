@@ -6,6 +6,30 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		436A555E13832E430055D3E5 /* Fetch Source */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 436A556213832EAE0055D3E5 /* Build configuration list for PBXAggregateTarget "Fetch Source" */;
+			buildPhases = (
+				436A555D13832E430055D3E5 /* Mac Framework */,
+			);
+			dependencies = (
+			);
+			name = "Fetch Source";
+			productName = "Fetch Source";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		436A558D13832FC10055D3E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4300281C12F24C1E00C31A83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 436A555E13832E430055D3E5 /* Fetch Source */;
+			remoteInfo = "Fetch Source";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4300283612F24CFC00C31A83 /* .framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = .framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4300283F12F24D6C00C31A83 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = configs/Base.xcconfig; sourceTree = "<group>"; };
@@ -98,6 +122,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				436A558E13832FC10055D3E5 /* PBXTargetDependency */,
 			);
 			name = "Mac Framework";
 			productName = Untitled;
@@ -129,6 +154,7 @@
 			projectRoot = "";
 			targets = (
 				4300283512F24CFC00C31A83 /* Mac Framework */,
+				436A555E13832E430055D3E5 /* Fetch Source */,
 			);
 		};
 /* End PBXProject section */
@@ -157,7 +183,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}";
+			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}\n";
+		};
+		436A555D13832E430055D3E5 /* Mac Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Mac Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -170,6 +210,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		436A558E13832FC10055D3E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 436A555E13832E430055D3E5 /* Fetch Source */;
+			targetProxy = 436A558D13832FC10055D3E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4300281D12F24C1E00C31A83 /* Debug */ = {
@@ -197,6 +245,27 @@
 			buildSettings = {
 			};
 			name = Debug;
+		};
+		436A555F13832E430055D3E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = Release;
+		};
+		436A556013832E430055D3E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = Debug;
+		};
+		436A556113832E430055D3E5 /* StaticAnalyzer */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = StaticAnalyzer;
 		};
 		43D8CE6B12F5BAD8008B0E4F /* StaticAnalyzer */ = {
 			isa = XCBuildConfiguration;
@@ -230,6 +299,16 @@
 				4300283912F24CFD00C31A83 /* Release */,
 				4300283A12F24CFD00C31A83 /* Debug */,
 				43D8CE6C12F5BAD8008B0E4F /* StaticAnalyzer */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		436A556213832EAE0055D3E5 /* Build configuration list for PBXAggregateTarget "Fetch Source" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				436A555F13832E430055D3E5 /* Release */,
+				436A556013832E430055D3E5 /* Debug */,
+				436A556113832E430055D3E5 /* StaticAnalyzer */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

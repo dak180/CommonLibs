@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		436A55A3138343460055D3E5 /* Fetch Source */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 436A55AB138343950055D3E5 /* Build configuration list for PBXAggregateTarget "Fetch Source" */;
+			buildPhases = (
+				436A55A2138343460055D3E5 /* Mac Framework */,
+			);
+			dependencies = (
+			);
+			name = "Fetch Source";
+			productName = "Fetch Source";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		430CA76212F297230070E87A /* jconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 430CA75B12F297230070E87A /* jconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		430CA76312F297230070E87A /* jerror.h in Headers */ = {isa = PBXBuildFile; fileRef = 430CA75C12F297230070E87A /* jerror.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,6 +77,16 @@
 		430CA7D512F29ACA0070E87A /* jutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 430CA7A712F29ACA0070E87A /* jutils.c */; };
 		430CA7E612F29BD50070E87A /* jmemansi.c in Sources */ = {isa = PBXBuildFile; fileRef = 430CA7E512F29BD50070E87A /* jmemansi.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		436A55A7138343850055D3E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4300281C12F24C1E00C31A83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 436A55A3138343460055D3E5 /* Fetch Source */;
+			remoteInfo = "Fetch Source";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4300283612F24CFC00C31A83 /* Jpeg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jpeg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -272,7 +296,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4300283B12F24CFD00C31A83 /* Build configuration list for PBXNativeTarget "Mac Framework" */;
 			buildPhases = (
-				4300284E12F24F2D00C31A83 /* Fetch Source */,
 				430CA75612F295070070E87A /* Generate headers */,
 				4300283112F24CFC00C31A83 /* Headers */,
 				4300283212F24CFC00C31A83 /* Resources */,
@@ -282,6 +305,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				436A55A8138343850055D3E5 /* PBXTargetDependency */,
 			);
 			name = "Mac Framework";
 			productName = Untitled;
@@ -313,6 +337,7 @@
 			projectRoot = "";
 			targets = (
 				4300283512F24CFC00C31A83 /* Mac Framework */,
+				436A55A3138343460055D3E5 /* Fetch Source */,
 			);
 		};
 /* End PBXProject section */
@@ -328,21 +353,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4300284E12F24F2D00C31A83 /* Fetch Source */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Fetch Source";
-			outputPaths = (
-				"$(SRCROOT)/external/$(PRODUCT_INFO_SHORTNAME)/",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}src.v${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}";
-		};
 		430CA75612F295070070E87A /* Generate headers */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +368,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cp -pv external/jpeg/jconfig.txt external/jpeg/jconfig.h";
+		};
+		436A55A2138343460055D3E5 /* Mac Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Mac Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}src.v${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -417,6 +441,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		436A55A8138343850055D3E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 436A55A3138343460055D3E5 /* Fetch Source */;
+			targetProxy = 436A55A7138343850055D3E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		4300281D12F24C1E00C31A83 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -445,6 +477,30 @@
 			buildSettings = {
 			};
 			name = Debug;
+		};
+		436A55A4138343470055D3E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430CA75012F294430070E87A /* Jpeg-All.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = Release;
+		};
+		436A55A5138343470055D3E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430CA75012F294430070E87A /* Jpeg-All.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = Debug;
+		};
+		436A55A6138343470055D3E5 /* StaticAnalyzer */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430CA75012F294430070E87A /* Jpeg-All.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = StaticAnalyzer;
 		};
 		43D8CE6312F5BAC2008B0E4F /* StaticAnalyzer */ = {
 			isa = XCBuildConfiguration;
@@ -479,6 +535,16 @@
 				4300283912F24CFD00C31A83 /* Release */,
 				4300283A12F24CFD00C31A83 /* Debug */,
 				43D8CE6412F5BAC2008B0E4F /* StaticAnalyzer */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		436A55AB138343950055D3E5 /* Build configuration list for PBXAggregateTarget "Fetch Source" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				436A55A4138343470055D3E5 /* Release */,
+				436A55A5138343470055D3E5 /* Debug */,
+				436A55A6138343470055D3E5 /* StaticAnalyzer */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

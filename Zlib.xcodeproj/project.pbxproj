@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		436A564C13834D5F0055D3E5 /* Fetch Source */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 436A565513834D9A0055D3E5 /* Build configuration list for PBXAggregateTarget "Fetch Source" */;
+			buildPhases = (
+				436A564B13834D5F0055D3E5 /* Mac Framework */,
+			);
+			dependencies = (
+			);
+			name = "Fetch Source";
+			productName = "Fetch Source";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		43002B2A12F2761700C31A83 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B1012F2761700C31A83 /* adler32.c */; };
 		43002B2B12F2761700C31A83 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002B1112F2761700C31A83 /* compress.c */; };
@@ -227,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				4300283512F24CFC00C31A83 /* Mac Framework */,
+				436A564C13834D5F0055D3E5 /* Fetch Source */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +270,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}";
+			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}\n";
+		};
+		436A564B13834D5F0055D3E5 /* Mac Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Mac Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -313,6 +342,30 @@
 			};
 			name = Debug;
 		};
+		436A564D13834D5F0055D3E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43002B0812F2748400C31A83 /* Zlib-All.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = Release;
+		};
+		436A564E13834D5F0055D3E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43002B0812F2748400C31A83 /* Zlib-All.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = Debug;
+		};
+		436A564F13834D5F0055D3E5 /* StaticAnalyzer */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43002B0812F2748400C31A83 /* Zlib-All.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "Fetch Source";
+			};
+			name = StaticAnalyzer;
+		};
 		43D8CE4A12F5BA3B008B0E4F /* StaticAnalyzer */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4300283F12F24D6C00C31A83 /* Base.xcconfig */;
@@ -346,6 +399,16 @@
 				4300283912F24CFD00C31A83 /* Release */,
 				4300283A12F24CFD00C31A83 /* Debug */,
 				43D8CE4B12F5BA3B008B0E4F /* StaticAnalyzer */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		436A565513834D9A0055D3E5 /* Build configuration list for PBXAggregateTarget "Fetch Source" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				436A564D13834D5F0055D3E5 /* Release */,
+				436A564E13834D5F0055D3E5 /* Debug */,
+				436A564F13834D5F0055D3E5 /* StaticAnalyzer */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
