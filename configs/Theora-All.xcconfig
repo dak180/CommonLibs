@@ -5,7 +5,7 @@
 
 PRODUCT_NAME = Theora
 USER_HEADER_SEARCH_PATHS = $(inherited) $(SRCROOT)/external/libtheora/lib/
-WARNING_CFLAGS = -Wno-parentheses // Silence warnings that are not ours
+GCC_WARN_INHIBIT_ALL_WARNINGS = YES // Silence warnings that are not ours
 
 PRODUCT_INFO_VERSION = 1.1.1
 PRODUCT_INFO_COPYRIGHT = Copyright © 2002-2009 Xiph.Org Foundation
