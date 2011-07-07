@@ -1,0 +1,9 @@
+<zedboy> dackel: in general the *only* way to use a computer program
+         is to execute it. have you *ever* known a system utility whose
+         documentation recommended either deleting it, or throwing it
+         at a farm animal?
+<dackel> zedboy: Ummm... yes
+<zedboy> dackel: install the manpages package. it should be there
+         already tho.
+<zedboy> dackel: example of such a bovine utility?
+* greycat wants a video of dackel throwing /usr/bin/file at a cow
