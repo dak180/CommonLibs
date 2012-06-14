@@ -29,7 +29,7 @@
 		43002D4912F27D5600C31A83 /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002D3612F27D5600C31A83 /* pngget.c */; };
 		43002D4A12F27D5600C31A83 /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002D3712F27D5600C31A83 /* pngmem.c */; };
 		43002D4B12F27D5600C31A83 /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002D3812F27D5600C31A83 /* pngpread.c */; };
-		43002D4C12F27D5600C31A83 /* pngpriv.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002D3912F27D5600C31A83 /* pngpriv.h */; settings = {ATTRIBUTES = (); }; };
+		43002D4C12F27D5600C31A83 /* pngpriv.h in Headers */ = {isa = PBXBuildFile; fileRef = 43002D3912F27D5600C31A83 /* pngpriv.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		43002D4D12F27D5600C31A83 /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002D3A12F27D5600C31A83 /* pngread.c */; };
 		43002D4E12F27D5600C31A83 /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002D3B12F27D5600C31A83 /* pngrio.c */; };
 		43002D4F12F27D5600C31A83 /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 43002D3C12F27D5600C31A83 /* pngrtran.c */; };
