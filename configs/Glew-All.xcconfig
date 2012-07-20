@@ -12,8 +12,8 @@ WARNING_CFLAGS = -Wall
 
 HEADER_SEARCH_PATHS_QUOTED_3 = "$(SRCROOT)/external/glew/include/**"
 
-PRODUCT_INFO_VERSION = 1.7.0
-PRODUCT_INFO_COPYRIGHT = Copyright 2002-2011 contributing authors.
+PRODUCT_INFO_VERSION = 1.8.0
+PRODUCT_INFO_COPYRIGHT = Copyright 2002-2012 contributing authors.
 PRODUCT_INFO_SHORTNAME = glew
-PRODUCT_INFO_PATH = downloads.sourceforge.net/project/glew/glew/1.7.0/
-PRODUCT_INFO_HASH = fb7a8bb79187ac98a90b57f0f27a3e84
+PRODUCT_INFO_PATH = downloads.sourceforge.net/project/glew/glew/1.8.0/
+PRODUCT_INFO_HASH = 07c47ad0253e5d9c291448f1216c8732
