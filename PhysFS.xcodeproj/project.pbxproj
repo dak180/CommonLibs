@@ -324,7 +324,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.gz\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}\n";
+			shellScript = "OutDir=\"${PRODUCT_INFO_SHORTNAME}\"\nDirectorY=\"${OutDir}-${PRODUCT_INFO_VERSION}\"\nFileName=\"${OutDir}-${PRODUCT_INFO_VERSION}.tar.bz2\"\nSourceDLP=\"http://${PRODUCT_INFO_PATH}${FileName}\"\nMD5Sum=\"${PRODUCT_INFO_HASH}\"\n\nconfigs/FetchSource.sh \"${DirectorY}\" \"${OutDir}\" \"${FileName}\" \"${SourceDLP}\" \"${MD5Sum}\"\nexit ${?}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
