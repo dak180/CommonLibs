@@ -6,7 +6,7 @@ OutDir="$2"
 FileName="$3"
 SourceDLP="$4"
 MD5Sum="$5"
-BackupDLP=""
+BackupDLP="http://distfiles.hnd.jp.asi.finkmirrors.net/"
 
 
 # Make sure we are in the right place
